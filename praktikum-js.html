@@ -12,7 +12,8 @@
         <h1>Pendaftaran Artis</h1>
         <h2>Bergabunglah Menjadi Bintang Masa Depan!</h2>
 
-        <p id="tanggal"></p> 
+        <p id="tanggal"></p> <!-- Menampilkan tanggal otomatis -->
+
         <form>
             <label for="name">Nama Lengkap:</label>
             <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
@@ -39,38 +40,6 @@
         </form>
     </div>
 
-    <script>
-        // Menampilkan tanggal saat ini di halaman
-        window.onload = function() {
-            let tanggal = new Date();
-            document.getElementById("tanggal").innerHTML = "📅 Tanggal Hari Ini: " + tanggal.toDateString();
-        };
-
-        // Fungsi untuk menampilkan data input dalam alert
-        function tampil() {
-            let nama = document.getElementById("name").value;
-            let lahir = document.getElementById("birthdate").value;
-            let gender = document.getElementById("gender").value;
-            let kategori = document.getElementById("category").value;
-
-            if (nama === "" || lahir === "" || gender === "" || kategori === "") {
-                alert("⚠ Harap isi semua data terlebih dahulu!");
-            } else {
-                alert(
-                    "✅ Data Pendaftaran:\n" +
-                    "📌 Nama: " + nama + "\n" +
-                    "📆 Tanggal Lahir: " + lahir + "\n" +
-                    "🚻 Jenis Kelamin: " + gender + "\n" +
-                    "🎭 Kategori: " + kategori
-                );
-            }
-        }
-
-        // Fungsi untuk menampilkan tanggal dalam alert
-        function show() {
-            let tanggal = new Date();
-            alert("📅 Tanggal Hari Ini: " + tanggal.toDateString());
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

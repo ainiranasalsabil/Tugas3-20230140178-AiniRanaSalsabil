@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/img/seventeen.jpg');
+    background-image: url('/img/seventeen.jpg'); /* Pastikan gambar ada di folder img */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,18 +11,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .container {
     max-width: 800px;
-    width: 90%; 
-    height: auto; 
-    min-height: 500px; 
+    width: 90%;
+    height: auto;
+    min-height: 500px;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.85); 
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+h1, h2 {
+    font-size: 28px;
+    color: gold;
 }
 
 input, select {
@@ -46,9 +51,4 @@ button {
 
 button:hover {
     background-color: orange;
-}
-
-h1, h2 {
-    font-size: 28px;
-    color: gold;
 }
