@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/img/seventeen.jpg'); /* Pastikan gambar ada di folder img */
+    background-image: url('/img/seventeen.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
